@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background: #080808;
+    color: #fff;
+  }
+  .header{
+      top:0;
+      position: fixed;
+      left: 0;
+      padding: 20px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      width: 100%;
+    
+  }
+  .container{
+    padding: 10px 10%;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .logo{
+    width: 140px;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  .home{
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      padding: 0 10%;
+  
+  }
+  .home-content {
+       max-width: 600px;
+  
+  }
+  .home-content h1{
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.2;
+  }
+  .home-content h3{
+      font-size: 32px;
+      font-weight: 700;
+      color: #ff004f;
+  }
+  .home-content p{
+      font-size: 16px;
+      margin: 20px 0 40px;
+  }
+  .home-content .btn-box{
+      display: flex;
+      justify-content: space-between;
+      width: 345px;
+      height: 50px;
+  }
+  .btn-box a{
+      position: relative;
+      width: 150px;
+      height: 100%;
+      background-color: #080808;
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid #ff004f;
+      border-radius: 8px;
+      font-size: 30px;
+      color: #ff004f;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      z-index: 1;
+      overflow: hidden;
+  }
+  .home-sci{
+      position: vertical;
+      bottom: 10px;
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .btn{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    padding: 0.5em;
+  }
